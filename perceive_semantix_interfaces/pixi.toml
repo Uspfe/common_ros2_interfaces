@@ -1,21 +1,11 @@
-[workspace]
-name = "perceive_semantix_interfaces"
-channels = ["robostack-humble", "conda-forge"]
-preview = ["pixi-build"]
-platforms = ["linux-64"]
-
 [package]
 name = "perceive_semantix_interfaces"
 version = "0.0.1"
 
 [package.build]
-config = { distro = "humble" }
-
-[package.build.backend]
-name = "pixi-build-ros"
-version = "*"
 channels = [
   "https://prefix.dev/pixi-build-backends",
   "https://prefix.dev/conda-forge",
 ]
-
+backend = { name = "pixi-build-ros", version = "*"}
+config = { distro = "humble" }

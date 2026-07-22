@@ -1,0 +1,6 @@
+[package]
+name = "ros-humble-zenoh-cpp-vendor"
+version = "0.1.2"
+
+[package.build]
+backend = { name = "pixi-build-rattler-build", version = "*" }

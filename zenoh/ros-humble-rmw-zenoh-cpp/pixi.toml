@@ -9,9 +9,9 @@ backend = { name = "pixi-build-rattler-build", version = "*" }
 # requirement from the workspace source package instead of the py311 binary
 [package.host-dependencies]
 # ros-humble-zenoh-cpp-vendor = { path = "../ros-humble-zenoh-cpp-vendor" }
-ros-humble-zenoh-cpp-vendor = { git = "https://github.com/Uspfe/common_ros2_interfaces.git", subdirectory = "zenoh/ros-humble-zenoh-cpp-vendor" }
+# ros-humble-zenoh-cpp-vendor = { git = "https://github.com/Uspfe/common_ros2_interfaces.git", subdirectory = "zenoh/ros-humble-zenoh-cpp-vendor" }
 
 
 [package.run-dependencies]
 # ros-humble-zenoh-cpp-vendor = { path = "../ros-humble-zenoh-cpp-vendor" }
-ros-humble-zenoh-cpp-vendor = { git = "https://github.com/Uspfe/common_ros2_interfaces.git", subdirectory = "zenoh/ros-humble-zenoh-cpp-vendor" }
+# ros-humble-zenoh-cpp-vendor = { git = "https://github.com/Uspfe/common_ros2_interfaces.git", subdirectory = "zenoh/ros-humble-zenoh-cpp-vendor" }

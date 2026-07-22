@@ -1,5 +1,5 @@
 [package]
-name = "ros-humble-zenoh-cpp-vendor"
+name = "ros-humble-rmw-zenoh-cpp-bundle"
 version = "0.1.2"
 
 [package.build]

@@ -8,4 +8,4 @@ channels = [
   "https://prefix.dev/conda-forge",
 ]
 backend = { name = "pixi-build-ros", version = "*"}
-config = { distro = "humble" }
+config = { distro = "jazzy" }

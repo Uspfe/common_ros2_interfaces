@@ -1,0 +1,6 @@
+[package]
+name = "ros-jazzy-rmw-zenoh-cpp-bundle"
+version = "0.2.10"
+
+[package.build]
+backend = { name = "pixi-build-rattler-build", version = "*" }

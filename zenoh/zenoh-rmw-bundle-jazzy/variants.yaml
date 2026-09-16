@@ -1,0 +1,28 @@
+# Variant config for the mutex-0.14 rebuild of rmw_zenoh_cpp / zenoh_cpp_vendor 0.2.10.
+# Values taken from the official robostack-jazzy 0.2.10 build (np2py312h6b96cb9_21);
+# nothing here differs from it. In particular libzenohc/libzenohcxx stay at 1.9.0, which
+# is what keeps this build wire-compatible with stock 0.2.10 installs elsewhere in the
+# fleet. The only change from the official build lives in recipe.yaml: ros2-distro-mutex
+# 0.16 -> 0.14, so it installs alongside Eigen 3.4 for OKVIS2-X.
+c_compiler:
+  - gcc
+c_compiler_version:
+  - "14"
+c_stdlib:
+  - sysroot
+c_stdlib_version:
+  - "2.17"
+cxx_compiler:
+  - gxx
+cxx_compiler_version:
+  - "14"
+cmake:
+  - 3.*
+libzenohc:
+  - 1.9.0
+libzenohcxx:
+  - 1.9.0
+numpy:
+  - "2"
+python:
+  - 3.12.* *_cpython

@@ -1,0 +1,15 @@
+# perceive_semantix_interfaces/action/SearchObject.action
+
+# Search for the object a text query asks for, e.g. "the yellow ball". The goal sets the query of layer 2, which the
+# exploration map follows. It succeeds once the object is found: an instance whose current view a vision-language
+# model judged to show what the query asks for and that is present with at least query.found_presence_threshold.
+# Cancelling clears the query; a new goal aborts the running one, as does a query that cannot be interpreted.
+
+# Goal
+string query
+---
+# Result
+ObjectDetection object  # the instance at which the query is found (empty unless succeeded)
+string caption          # its caption
+---
+# Feedback

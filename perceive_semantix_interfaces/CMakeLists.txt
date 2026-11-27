@@ -13,6 +13,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ObjectDetectionArray.msg"
   "srv/EnableHeatmap.srv"
   "srv/SetMapPose.srv"
+  "action/SearchObject.action"
   DEPENDENCIES geometry_msgs builtin_interfaces
 )
 
